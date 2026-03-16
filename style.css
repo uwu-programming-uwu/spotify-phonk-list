@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 30px;
+        background-color: #f0f0f0;
+        text-align: center;
+
+        header {
+
+            h1 {
+                font-weight: 1000;
+                text-shadow: 2px 2px 2px #80808080;
+            }
+
+            hr {
+                border: 1px solid #80808080;
+            }
+        }
+
+        main {
+
+            p {
+                text-shadow: 1px 1px 1px #80808080;
+                margin: 2em;
+                font-style: italic;
+                line-height: 1.5em;
+            }
+
+            article {
+
+                div.line {
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    line-height: 1.5em;
+                    gap: 1em;
+                    padding: 0.5em 0.1em;
+                    border-bottom: 1px solid #80808080;
+
+                    span.name {
+                        font-style: italic;
+
+                        a {
+                            text-decoration: none;
+                            color: #00f;
+                        }
+                    }
+                }
+
+                div.line:first-of-type {
+                    border-top: 1px solid #80808080;
+                    background-color: #ffff0080;
+                }
+
+                div.line:nth-of-type(2) {
+                    background-color: #c0c0c080;
+                }
+
+                div.line:nth-of-type(3) {
+                    background-color: #a52a2a80;
+                }
+
+                div.line:last-of-type {
+                    margin-bottom: 2em;
+                }
+            }
+        }
+
+        header {
+            hr {
+                border: 1px solid #80808080;
+            }
+
+            p {
+                font-weight: bold;
+                margin-bottom: 0.5em;
+
+                a {
+                    color: #00f;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        width: 1000px;
+        justify-self: center;
+        font-size: 1.2em;
+
+        div {
+            padding: 0.5em 1em !important;
+        }
+
+        a {
+            transition: all 0.1s;
+        }
+
+        a:hover {
+            color: #f00 !important;
+            transform: scale(1.01);
+            display: inline-block;
+        }
+    }
+}
